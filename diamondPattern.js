@@ -1,5 +1,5 @@
-function diamondKata() {
-  let originalString = 'ABCDE'
+function diamondKata(str) {
+  let originalString = str
   for (let i = 0; i < originalString.length; i++) {
     let tempString = ''
     for (let j = originalString.length - 1; j > 0; j--) {
@@ -37,4 +37,4 @@ function diamondKata() {
     console.log(tempString)
   }
 }
-diamondKata()
+diamondKata('ABCD')
